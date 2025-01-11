@@ -24,7 +24,7 @@ return new class extends Migration
             * In most of the cases, you want to store the logo like it was when the invoice was created.
             * That's why we will store it in the database.
             **/
-            $table->binary('logo')->nullable(); 
+            $table->binary('logo')->nullable();
 
             $table->string('state')->index();
             $table->dateTime('state_set_at')->nullable();
